@@ -29,23 +29,14 @@ class performance_glitch_user_locators{
     }
 
     get clickOnFilter(){
-        //return $("//span[@class='active_option']");
-        //return $(" //span[@class='select_container']");
         return $("//span[@class='select_container']");
-
     }
 
     get clickOnOption(){
-        //return $("//span[@class='active_option']");
-        //return $(" //span[@class='select_container']");
+
         return $("//select[@class='product_sort_container']/option[2]");
 
     }
-    //add three item
-
-    // get productlist(){
-    //     return $$("//div[@class='inventory_item_name ']");
-    // }
 
     get addTocart(){
         return $$("//button[contains(text(), 'Add to cart')]");
@@ -69,11 +60,6 @@ class performance_glitch_user_locators{
         return $("//input[@placeholder='First Name']")
     }
 
-// //selected product name from the home page 
-//     get productName(){
-//         return $$("//div[@class='inventory_item_name ']")
-
-//     }
 //verify product name from the checkout page
     get CartItem_productName() {
         return $$("//div[@class='inventory_item_name']");
