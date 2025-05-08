@@ -30,11 +30,6 @@ exports.config = {
       q3: ['./test/specs/performanceGlitchUser.spec.js']
     },
 
-  //suites :{
-     //  purchase:[ locked_out_user, standard_user, performance_glitch_user]
-
-   //},
-
    // Patterns to exclude.
    exclude: [
        // 'path/to/excluded/files'
