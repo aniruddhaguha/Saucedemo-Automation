@@ -195,5 +195,3 @@ Make sure that in **wdio.conf.js** file, "maxInstances: 1"
 ```sh
 npm run getReport
 ```
-
-# HAPPY TESTING !!! :tada:
