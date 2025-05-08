@@ -186,3 +186,10 @@ Make sure that in **wdio.conf.js** file, "maxInstances: 1"
 ### Generate and View Allure Report
 ```sh
 npm run getReport
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> backup-main
