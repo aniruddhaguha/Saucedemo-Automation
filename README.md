@@ -1,9 +1,6 @@
 <<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Saucedemo-Automation
 =======
->>>>>>> 4bbf9ef (some changes)
 # Saucedemo Automation WebdriverIO
 
 ## Overview
@@ -77,11 +74,7 @@ This project automates end-to-end testing for the [Saucedemo](https://www.sauced
 
 ## Clone the repository:
    ```sh
-<<<<<<< HEAD
-   git clone https://github.com/aniruddhaguha/Saucedemo-Automation.git
-=======
    git clone https://github.com/aniruddhaguha/saucedemo-automation.git
->>>>>>> 4bbf9ef (some changes)
    ```
 
 
@@ -205,9 +198,6 @@ Make sure that in **wdio.conf.js** file, "maxInstances: 1"
 ```sh
 npm run getReport
 ```
-<<<<<<< HEAD
-=======
 
 # HAPPY TESTING !!! :tada:
 >>>>>>> 229278b (initialize project)
->>>>>>> 4bbf9ef (some changes)
