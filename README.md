@@ -71,7 +71,7 @@ This project automates end-to-end testing for the [Saucedemo](https://www.sauced
 
 ## Clone the repository:
    ```sh
-   git clone https://github.com/aniruddhaguha/saucedemo-automation.git
+   git clone https://github.com/aniruddhaguha/Saucedemo-Automation.git
    ```
 
 
