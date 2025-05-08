@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Saucedemo-Automation
-=======
 # Saucedemo Automation WebdriverIO
 
 ## Overview
@@ -8,8 +5,6 @@ This project automates end-to-end testing for the [Saucedemo](https://www.sauced
 
 ## Tech Stack
 - **Test Framework:** WebdriverIO
-- **Test Runner:** Mocha
-- **Assertions:** Chai
 - **Reporting:** Allure Reporter
 - **Programming Language:** JavaScript
 - **Browser:** Chrome
@@ -74,7 +69,7 @@ This project automates end-to-end testing for the [Saucedemo](https://www.sauced
 
 ## Clone the repository:
    ```sh
-   git clone https://github.com/aniruddhaguha/saucedemo-automation.git
+   git clone https://github.com/aniruddhaguha/Saucedemo-Automation.git
    ```
 
 
@@ -114,8 +109,8 @@ Modify the `scripts` section in `package.json`:
    ```js
    reporters: [['allure', {
         outputDir: 'allure-results',
-        disableWebdriverStepsReporting: false,
-        disableWebdriverScreenshotsReporting: false // Enables screenshot capture
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: true
     }]],
    ```
    Add this **after** `reporters: ['dot']`.
@@ -133,6 +128,7 @@ Modify the `scripts` section in `package.json`:
 4. Update `wdio.conf.js`:
    ```js
    baseUrl: 'https://www.saucedemo.com/',
+    //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 18000,
    ```
@@ -160,17 +156,9 @@ Modify the `scripts` section in `package.json`:
 ## Test Execution
 ### Run All Tests
 ```sh
-npm run test
+npm run testall
 ```
-Or run specific Test Sceneario by commenting/uncommenting in **spec** section in **wdio.conf.js** file then use command **"npm run test"** in the terminal.
-```js
-specs: [
-         locked_out_user,
-        // standard_user,
-        // performance_glitch_user
-        // './test/specs/**/*.js'
-    ],
-```
+
 For './test/specs/**/*.js' make sure that "maxInstances" is set to 3 or more so that all three test scenarios can run in different windows at the same time.
 
 ```js
@@ -181,14 +169,15 @@ maxInstances: 10,
 ### Run Purchase Suite
 In **suite** section in **wdio.conf.js** file
 ```js
-suites :{ 
-        purchase:[ locked_out_user, standard_user, performance_glitch_user]
-
+suites: {
+      q1: ['./test/specs/loginLockedOutUser.spec.js'],
+      q2: ['./test/specs/standardUserPurchase.spec.js'],
+      q3: ['./test/specs/performanceGlitchUser.spec.js']
     },
 ```
 and then in terminal,
 ```sh
-npm run purchase
+npm run testall
 ```
 Purchase suite contains all test scenarios: `locked_out_user`, `standard_user`, `performance_glitch_user`. The three scenarios will run altogether in a sequential way.
 
@@ -197,7 +186,7 @@ Make sure that in **wdio.conf.js** file, "maxInstances: 1"
 ### Generate and View Allure Report
 ```sh
 npm run getReport
-```
 
-# HAPPY TESTING !!! :tada:
->>>>>>> 229278b (initialize project)
+
+
+

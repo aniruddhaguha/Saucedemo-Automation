@@ -262,8 +262,6 @@ exports.config = {
    },
 
 
-
-
    /**
     * Hook that gets executed after the suite has ended
     * @param {object} suite suite details
