@@ -1,7 +1,6 @@
 class Utility{
 
     async convertTextToNumber(text){
-        //const value =parseFloat(text.replace(/[$,]/g, ""));
         const value = parseFloat(text.replace(/[^\d.]/g, ''));
         return value;
     }
