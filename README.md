@@ -181,7 +181,7 @@ and then in terminal,
 ```sh
 npm run testall
 ```
-All test scenarios: `locked_out_user`, `standard_user`, `performance_glitch_user`. The three scenarios will run altogether in a sequential way.
+All test scenarios: `locked_out_user`,`performance_glitch_user`,`standard_user`. The three scenarios will run altogether in a sequential way.
 
 Make sure that in **wdio.conf.js** file, "maxInstances: 1"
 
