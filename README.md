@@ -5,6 +5,8 @@ This project automates end-to-end testing for the [Saucedemo](https://www.sauced
 
 ## Tech Stack
 - **Test Framework:** WebdriverIO
+- **Test Runner:** Mocha
+- **Assertions:** Chai
 - **Reporting:** Allure Reporter
 - **Programming Language:** JavaScript
 - **Browser:** Chrome
