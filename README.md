@@ -111,8 +111,8 @@ Modify the `scripts` section in `package.json`:
    ```js
    reporters: [['allure', {
         outputDir: 'allure-results',
-        disableWebdriverStepsReporting: true,
-        disableWebdriverScreenshotsReporting: true
+        disableWebdriverStepsReporting: false,
+        disableWebdriverScreenshotsReporting: false,
     }]],
    ```
    Add this **after** `reporters: ['dot']`.
