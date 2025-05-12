@@ -14,7 +14,7 @@
     "test:q3": "wdio run ./wdio.conf.js --suite q3",
     "test:all": "wdio run ./wdio.conf.js",
     "purchase": "wdio run ./wdio.conf.js --suite q2",
-    "getReport": "allure generate --clean allure-results && allure open allure-report"
+    "getReport": "allure generate allure-results --clean && allure open"
   },
   "keywords": [],
   "author": "",
